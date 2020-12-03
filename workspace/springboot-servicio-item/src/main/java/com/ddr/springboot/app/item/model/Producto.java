@@ -2,15 +2,60 @@ package com.ddr.springboot.app.item.model;
 
 import java.util.Date;
 
-import lombok.Getter;
-import lombok.Setter;
-
 public class Producto {
 	
-	@Getter @Setter private Long id;
-	@Getter @Setter private String nombre;
-	@Getter @Setter private Double precio;
-	@Getter @Setter private Date createAt;
+	private Long id;
+	private String nombre;
+	private Double precio;
+	private Date createAt;
+	/**
+	 * @return the id
+	 */
+	public Long getId() {
+		return id;
+	}
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(Long id) {
+		this.id = id;
+	}
+	/**
+	 * @return the nombre
+	 */
+	public String getNombre() {
+		return nombre;
+	}
+	/**
+	 * @param nombre the nombre to set
+	 */
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	/**
+	 * @return the precio
+	 */
+	public Double getPrecio() {
+		return precio;
+	}
+	/**
+	 * @param precio the precio to set
+	 */
+	public void setPrecio(Double precio) {
+		this.precio = precio;
+	}
+	/**
+	 * @return the createAt
+	 */
+	public Date getCreateAt() {
+		return createAt;
+	}
+	/**
+	 * @param createAt the createAt to set
+	 */
+	public void setCreateAt(Date createAt) {
+		this.createAt = createAt;
+	}
 	
 
 }

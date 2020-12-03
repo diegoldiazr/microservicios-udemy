@@ -1,19 +1,52 @@
 package com.ddr.springboot.app.item.model;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-
-@NoArgsConstructor
-@RequiredArgsConstructor(staticName = "of")
-@AllArgsConstructor(access = AccessLevel.PROTECTED)
 public class Item {
 	
-	@Getter @Setter private Producto producto;
-	@Getter @Setter private Integer cantidad;
+	private Producto producto;
+	private Integer cantidad;
+	
+	public Double getTotal() {
+		return producto.getPrecio() * cantidad.doubleValue();
+	}
+
+	/**
+	 * @return the producto
+	 */
+	public Producto getProducto() {
+		return producto;
+	}
+
+	/**
+	 * @param producto the producto to set
+	 */
+	public void setProducto(Producto producto) {
+		this.producto = producto;
+	}
+
+	/**
+	 * @return the cantidad
+	 */
+	public Integer getCantidad() {
+		return cantidad;
+	}
+
+	/**
+	 * @param cantidad the cantidad to set
+	 */
+	public void setCantidad(Integer cantidad) {
+		this.cantidad = cantidad;
+	}
+
+	public Item(Producto producto, Integer cantidad) {
+		super();
+		this.producto = producto;
+		this.cantidad = cantidad;
+	}
+
+	public Item() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 
