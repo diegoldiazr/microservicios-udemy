@@ -1,0 +1,16 @@
+insert into productos (nombre, precio, create_at) values ('nike', 3, now());
+insert into productos (nombre, precio, create_at) values ('pull & bear', 3333, now());
+insert into productos (nombre, precio, create_at) values ('somos osos', 643, now());
+insert into productos (nombre, precio, create_at) values ('el oeste', 773, now());
+insert into productos (nombre, precio, create_at) values ('no sin mi hija', 93, now());
+insert into productos (nombre, precio, create_at) values ('ferrari', 73, now());
+insert into productos (nombre, precio, create_at) values ('mercedes', 33, now());
+insert into productos (nombre, precio, create_at) values ('renault', 23, now());
+insert into productos (nombre, precio, create_at) values ('aston martin', 83, now());
+insert into productos (nombre, precio, create_at) values ('porche', 53, now());
+insert into productos (nombre, precio, create_at) values ('bmw', 35, now());
+insert into productos (nombre, precio, create_at) values ('honda', 309.98, now());
+insert into productos (nombre, precio, create_at) values ('playstation', 503, now());
+insert into productos (nombre, precio, create_at) values ('sony', 31, now());
+insert into productos (nombre, precio, create_at) values ('apple', 33, now());
+insert into productos (nombre, precio, create_at) values ('hp', 23.3, now());
