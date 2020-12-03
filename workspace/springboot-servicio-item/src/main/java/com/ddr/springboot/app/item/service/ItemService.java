@@ -8,6 +8,9 @@ import com.ddr.springboot.app.item.model.Item;
 
 @Service
 public class ItemService implements IItemService {
+	
+	@Autowired
+	private RestTemplate clienteRest;
 
 	@Override
 	public List<Item> findAll() {
