@@ -4,14 +4,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.ddr.springboot.app.item.clientes.IProductoClienteRest;
 import com.ddr.springboot.app.item.model.Item;
 
 @Service("ItemServiceFeign")
-@Primary
 public class ItemServiceFeign implements IItemService {
 	
 	@Autowired

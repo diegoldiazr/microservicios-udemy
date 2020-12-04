@@ -13,14 +13,14 @@ import org.springframework.web.client.RestTemplate;
 import com.ddr.springboot.app.item.model.Item;
 import com.ddr.springboot.app.item.model.Producto;
 
-@Service
+@Service("ItemService")
 public class ItemService implements IItemService {
 	
 	@Autowired
 	private RestTemplate clienteRest;
 	
-	private String URL_LISTAR = "http://localhost:8001/listar";
-	private String URL_VER = "http://localhost:8001/ver/{id}";
+	private String URL_LISTAR = "http://servicio-productos/listar";
+	private String URL_VER = "http://servicio-productos/ver/{id}";
 
 	@Override
 	public List<Item> findAll() {
