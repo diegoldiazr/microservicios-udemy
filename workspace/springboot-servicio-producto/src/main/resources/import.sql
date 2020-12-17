@@ -14,3 +14,4 @@ insert into productos (nombre, precio, create_at) values ('playstation', 503, no
 insert into productos (nombre, precio, create_at) values ('sony', 31, now());
 insert into productos (nombre, precio, create_at) values ('apple', 33, now());
 insert into productos (nombre, precio, create_at) values ('hp', 23.3, now());
+insert into productos (nombre, precio, create_at) values ('ps4 bob esponja', 29.99, now());
